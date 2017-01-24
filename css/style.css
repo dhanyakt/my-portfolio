@@ -1,0 +1,87 @@
+html,body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div, header {
+    box-sizing: border-box;
+}
+
+header{
+    height: 600px;
+    /*radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,*/
+    radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+    radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+    /*radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+    linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,*/
+    /* my design*/
+    /*linear-gradient(-50deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+    linear-gradient(50deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 10%) 50px 50px;
+    background-color: #300;
+    background-size: 150px 150px;
+    background-position: top center;*/
+    /*background-attachment: fixed;*/
+}
+
+img {
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+nav {
+    background-color: #212121;
+}
+
+h4 {
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.profilepic {
+    margin-top: 150px;
+}
+
+.card-container {
+    perspective: 800px;
+}
+
+.flip-card {
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+}
+
+.front {
+    height: 200px;
+    width: 100%;
+    background-color: #2196f3;
+}
+
+.front,.back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    height: 300px;
+    transform: rotateY(180deg);
+}
+
+.flip-card:hover {
+    transform: rotateY(180deg);
+
+}
+
+.title {
+    margin-top: 5%;
+}
+
+.card-title {
+    background-color: maroon;
+}
+
